@@ -83,6 +83,19 @@ We need the following commands.
 # e2fsck 
 ```
 
+### deploy system/
+
+```
+android@mokoid-lab:~/mokoid/out/target/product/goldfish $ mkdir mnt
+android@mokoid-lab:~/mokoid/out/target/product/goldfish $ sudo mount /dev/sdb2 mnt/
+android@mokoid-lab:~/mokoid/out/target/product/goldfish $ cd mnt/
+android@mokoid-lab:~/mokoid/out/target/product/goldfish/mnt $ sudo tar zxf /tmp/system.tar.gz 
+android@mokoid-lab:~/mokoid/out/target/product/goldfish/mnt $ ls
+app/  build.prop  fonts/      lib/         usr/
+bin/  etc/        framework/  lost+found/  xbin/
+android@mokoid-lab:~/mokoid/out/target/product/goldfish/mnt $ cd ..
+android@mokoid-lab:~/mokoid/out/target/product/goldfish $ sudo umount mnt
+```
 
 
 * how to well-deploy /data/dalvik-cache and /data/data
