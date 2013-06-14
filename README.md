@@ -1,10 +1,10 @@
-### Install Android/x86 ISO
+## Install Android/x86 ISO
 
 * Install Android-x86 into VirtualBox
 
 https://code.google.com/p/android-x86/downloads/list
 
-### Compile Android Linux Kernel for VirtualBox
+## Compile Android Linux Kernel for VirtualBox
 
 * Download Android Linux Kernel for VirtualBox 
 
@@ -32,7 +32,7 @@ $ sudo e2fsck -DC0 /deb/sdb1
 * Care of toolchain selection
 
 
-### Enhance Android System
+## Enhance Android System
 
 * Install pppd
 * Install stagefright library
@@ -49,7 +49,7 @@ BUILD_PV_2WAY := 1
 BUILD_PV_TEST_APPS := 1
 ```
 
-### Install busybox
+## Install busybox
 
 We need the following commands.
 
@@ -57,20 +57,33 @@ We need the following commands.
 * mknod
 
 
-### Install Bootchart
+## Install Bootchart
 
-### Install Kernel Modules
+## Install Kernel Modules
 
 * Install v4l2 (videodev.ko)
 * Install cdata (cdata.ko)
 
-### Deploy Android System
+## Deploy Android System
+
+### Partition Layout
 
 ```
 # mount -t ext2 /dev/sdb2 /system
 # mount -t ext2 /dev/sdb3 /data
 # mount -t ext2 /dev/sdb4 /cache
 ```
+
+### fdisk 
+
+```
+# fdisk ...
+# mkfs.ext2 ...
+# tune2fs ...
+# e2fsck 
+```
+
+
 
 * how to well-deploy /data/dalvik-cache and /data/data
 
