@@ -97,16 +97,16 @@ android@mokoid-lab:~/mokoid/out/target/product/goldfish/mnt $ cd ..
 android@mokoid-lab:~/mokoid/out/target/product/goldfish $ sudo umount mnt
 ```
 
-## deploy ramdisk.img and bzImage
+### deploy ramdisk.img and bzImage
 
-## Modify init.rc
+### Modify init.rc
 
 ### Install Grub
 
 * Use grub-install
 * how to well-deploy /data/dalvik-cache and /data/data
 
-## Installation CD
+### Installation CD
 
 
 
