@@ -66,6 +66,12 @@ We need the following commands.
 
 ### Deploy Android System
 
+```
+# mount -t ext2 /dev/sdb2 /system
+# mount -t ext2 /dev/sdb3 /data
+# mount -t ext2 /dev/sdb4 /cache
+```
+
 * how to well-deploy /data/dalvik-cache and /data/data
 
 
