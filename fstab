@@ -1,0 +1,5 @@
+none			/proc			proc	defaults	                0 0
+sysfs           /sys            sysfs   defaults                    0 0
+/dev/sda2       /system         ext2    defaults                    0 0
+/dev/sda3       /data           ext2    defaults                    0 0
+/dev/sda4       /cache          ext2    defaults                    0 0
