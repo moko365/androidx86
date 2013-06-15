@@ -1,0 +1,2 @@
+:0:sysinit:/bin/mount -a
+:0:respawn:/init
